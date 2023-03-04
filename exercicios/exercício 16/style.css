@@ -1,0 +1,29 @@
+@charset "utf-8";
+*{
+   /* height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#FC2C17,#E62044 );
+}
+main {
+    background-color: aliceblue;
+    width: 600px;/*aqui teremos a largura do meu quadro*/
+    padding: 10px;/*aqui termos os espaçamentos de borda*/
+    margin: auto;/*aqui teremos a o conteúdo centralizado automaticamente*/
+    border-radius: 10px;/*aqui teremos o arrendondamento de bordas o valor a escolher. Quanto maios o valor maior o arredondamento*/
+    box-shadow:5px 5px 15px #6605177a ;/*aqui teremos o sombremaneto da caixa main o primeiro valor diz respeito ao seu sonbreamento para o lado o degundo para baixo e o tercéiro é o quanto ela irá espalhar o o quarto é a sua transparência*/
+
+}
+h1{
+    color: #F24A16;
+    text-align: center;
+    text-shadow: 1px 1px 1px #66051783;
+}
+h2{
+    color: #E62044;
+    text-shadow: 1px 1px 1px #6605179d;
+}
+p{
+    text-align: justify;
+}
