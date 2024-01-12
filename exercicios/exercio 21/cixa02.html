@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #464343;
+            margin: 10px;
+    
+       }
+        header{
+           background-color: aliceblue;
+           padding: 10px;
+           margin: 10px;
+           
+        }
+       main{
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px 10px 30px 40px;
+        box-shadow: 2px 6px 14px rgba(255, 255, 255, 0.445);
+       }
+       article{
+        background-color: #a39d9d ;
+        padding: 10px;
+        margin: 10px;
+       }
+       article > aside{
+        background-color: #464343d2;
+        color: white;
+        text-align: left;
+        margin-top: 34px;
+        padding: 2px;
+       }
+       footer{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+        box-shadow: 2px 6px 14px rgba(255, 255, 255, 0.445);
+       }
+       nav{
+        background-color: #464343;
+        padding: 3px;
+        box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.363);
+       
+       }
+       nav > a{
+       
+        text-decoration: none;
+        font-weight: bolder;
+        color: aliceblue;
+        margin-left: 50px;
+       }
+       nav > a:hover{
+        text-decoration:  underline;
+        color: rgb(189, 177, 177);
+       }
+       footer > p{
+        margin: 0px;
+       }
+
+       .assunto{
+
+       }
+    </style>
+</head>
+<body>
+    <header>
+       <h1> Meu site </h1>
+       <nav>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+       </nav>
+    </header>
+   
+    <main>
+        <section id="noticias">
+            <h1>Esporte e turismo</h1>
+
+        </section>
+        <section id="assunto">
+            <article>
+                <h2>Os seres humanos são escrotos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quaerat quod suscipit esse! Nobis quas voluptas, at tenetur eligendi voluptate cum commodi possimus, magnam explicabo esse, expedita aliquid asperiores sunt.</p>
+                <aside>
+                    artigo escrito por birbizinho 
+                </aside>
+            </article>
+            
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido pelo birbizinho</p>
+    </footer>
+
+    
+</body>
+</html>
