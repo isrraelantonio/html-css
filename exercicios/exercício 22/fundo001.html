@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo </title>
+    <style>
+        div.quadrado{
+            background-color: aquamarine;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+
+        }
+        div#q1{
+            /*Aqui dentro do nosso código a partir de uma div como nome q1 fizemos a inserção de um tipo de background para a mesma com cor sólida */
+            background-color: aquamarine;
+
+        }
+        div#q2{
+             /*Aqui dentro do nosso código a partir de uma div como nome q2 fizemos a inserção de um outro tipo de background  nesse caso usamos o linear-gradiente node definimos a direção de onde irá crescer e de que cores  irar transitar  a ultima cor será a cor será a primeira*/
+           background-image: linear-gradient(
+            to bottom, rgb(252, 201, 19), yellow,orange, red);
+        }
+        div#q3{
+             /*Aqui dentro do nosso código a partir de uma div como nome q2 fizemos a inserção de um outro tipo de background  nesse caso usamos a url com o endereçamento da imagem, obs: as imagens para esse caso são usadas no seu tamanho total se elas forem menores poderão ser repetidas diversas vezes até que preencham todo o campo desejado*/
+             
+            background-image: url(imagens/pattern003.png);
+        }
+        body{
+            background-image: url(imagens/pattern001.png);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>
