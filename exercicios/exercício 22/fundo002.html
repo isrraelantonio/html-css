@@ -7,9 +7,14 @@
     <style>
         body{
             /* o background image na verdade faz com que a imagem se repita */
-            background-image: url(https://th.bing.com/th/id/R.aa91b069a21a528c247ba385d905ba57?rik=9sJLLDEV3VoinQ&pid=ImgRaw&r=0);/* Esse é um endereço externo de uma imagem  */
-            background-size: 100px,100px;
-            background-repeat: repeat-x;/* o background-repeat: no-repeate impede que a imagem usada se repita dentro da página, além dessa opção temos o repeat x e o repeat y  as mesmas se referem a qual eixo, X ou Y  a repetição acontece, lembrando que nesse momento as repetições partem sempre do canto superior esquerdo mais pode ser mudado*/
+
+            background-image: url(https://th.bing.com/th/id/R.aa91b069a21a528c247ba385d905ba57?rik=9sJLLDEV3VoinQ&pid=ImgRaw&r=0);/* Esse é um endereço externo de uma imagem usar uma imagem dessa forma torna o seu site refém de que a mesma esteja funcionando seja lá onde a mesma estiver hospedada  */
+
+            background-size: 100px,100px;/* O background-size configura o tamanho da imagem dentro da página sem claro interferir no tamanho da imagem em sí
+            nesse caso por essa imagem ser menor ela irá se repetir mais vezes 
+            */
+
+            background-repeat: repeat-x;/* o background-repeat: no-repeate impede que a imagem usada se repita dentro da página, além dessa opção temos o repeat x e o repeat y, as mesmas se referem a qual eixo, X ou Y  a repetição acontece, lembrando que nesse momento as repetições partem sempre do canto superior esquerdo, ou seja left top, porém pode ser mudado */
         }
     </style>
 </head>
