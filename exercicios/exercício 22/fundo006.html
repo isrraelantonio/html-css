@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 100vh; /* Definimos o tamanho da vew port */
+            background-color: black; /*Definimos cor de fundo para a página. nesse caso é muito importante pois o primeiro a aparecer na págia é o conteúdo e depois a imagem é interessante fazer isso pois enquanto a mesma carrega o usuário pode fazer o consumo do que já está apresentado, uma coloração pode ser mais interessante dependendo de gosto, do que apenas uma tela branca */
+            background-image: url(imagens/wallpaper002.jpg); /* nesse caso escolhemos a imagem para plano de fundo */
+            background-repeat: no-repeat; /* no-repeate para a iamgem não se repetir */
+            background-position: center center ; /*usamos para indicar a posição da imagem */
+            background-size: cover;  /* Essa opção é muito interessante, pois exibe a imagem, ocupando toda a view  port sem distorcer a imagem podendo fazer cortes na mesma para que tudo fique o mais harmônico possível. No caso da utilização da opção  "contain" que obriga que a imagem seja totalmente exibida e ou até mesmo definir o "background-size: 100% 100%;"
+            que no caso obrigaria a imagem ocupar toda a altura e largura, acabado por distorcer a mesma, e não fazendo as adaptações adequadas para que seja algo visualmente bonito com adaptação de fundo --- Uma boa opção tambem é usar o auto pois o navegador vai se virar para fazer essas adaptações. Na verdade achei igual ao cover*/
+            
+
+
+        }
+        main{
+            background-color: aliceblue;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid blue;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis asperiores ipsam ullam, temporibus magni aliquam ducimus consectetur tenetur necessitatibus facere libero quibusdam, ipsum ratione exercitationem alias fugit, cumque cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur saepe mollitia sit voluptates iste molestiae et repellendus, sequi molestias fugiat minus alias dolorem, natus laboriosam deleniti accusamus, blanditiis error.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatibus magni perspiciatis alias libero fugit eligendi commodi dignissimos eum quas quis quae, mollitia error sit quos sed totam, at obcaecati.
+        </p>
+    </main>
+    
+</body>
+</html>
