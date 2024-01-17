@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+
+    <style>
+
+        body{
+            height: 100vh; /* Definimos o tamanho da vew port */
+
+            /*
+            background-color: black; /*Definimos cor de fundo para a página. nesse caso é muito importante pois o primeiro a aparecer na págia é o conteúdo e depois a imagem é interessante fazer isso pois enquanto a mesma carrega o usuário pode fazer o consumo do que já está apresentado, uma coloração pode ser mais interessante dependendo de gosto, do que apenas uma tela branca 
+
+
+            background-image: url(imagens/wallpaper002.jpg); /* nesse caso escolhemos a imagem para plano de fundo 
+
+            background-repeat: no-repeat; /* no-repeate para a iamgem não se repetir 
+
+            background-position: center center ; /*usamos para indicar a posição da imagem 
+
+            background-size: cover;  /* Essa opção é muito interessante, pois exibe a imagem, ocupando toda a view  port sem distorcer a imagem podendo fazer cortes na mesma para que tudo fique o mais harmônico possível. No caso da utilização da opção  "contain" que obriga que a imagem seja totalmente exibida e ou até mesmo definir o "background-size: 100% 100%;"
+            que no caso obrigaria a imagem ocupar toda a altura e largura, acabado por distorcer a mesma, e não fazendo as adaptações adequadas para que seja algo visualmente bonito com adaptação de fundo --- Uma boa opção tambem é usar o auto pois o navegador vai se virar para fazer essas adaptações. Na verdade achei igual ao cover
+            
+            /*OBS: ESSE EXERCÍCIO É UMA CÓPIA DO EXERC´´ICIO 006 PRESENTE NO REPOSITÓRIO O COMENTÁRIO PRESENTE NO MESMO SE REPETE MAIS O ACRÉSCIMO DE NOVAS INFORMAÇÕES JÁ QUE AGORA TEMOS UM CONTEÚDO PARA O SITE UM POUCO MAIS EXTENSO E PRECISAMOS QUE O MESMO ROLE PORÉM QUE A IMAGEM MANTENHA-SE FIXA, PARA ESSE CASO USAREMOS O VÍNCULO OU ATTACHMENT
+
+            background-attachment: fixed; /* nesse caso para o background-attachment  usamos a opção fixed. Nesse caso mantemos o background fixo e rolamos apenas o conteúdo, se usarmos o scrol, o mesmo irá se movimentar junto ao conteúdo e dependendo das opções de background ou a imagem usada irá se rpetir nesse processo ou o contéudo continuará a ser apresentado só que transitando para uma cor sólida e não mais pela imagem do background
+
+            /* As shorthand permite usar uma característica do código e aplicá-la a mais de uma definição para a mesa. Por exemplo para o background, podemos usar da seguinte forma:  background      color> image> position> repeat > size ( Embora seja uma regra para a short hand, o size não funciona por  esse motivo o mesmo não será inserido aqui dentro porém o resto das opções sim)> atachment
+            
+            veja agora como ficaria o código acima reduzido e com todas as definições que nós usamos. */
+
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+            background-size: cover; /* Nesse caso, embora eu tenha o criado fora da shorthand as configurações não haviamm mudado sem ele talvez em bora não se faça presente a shorthand o insere e põe como padrão o cover mesmo pois antes de criar essa opção é como se ela  já existisse pelo menos nos meus sites*/
+            
+            
+            
+
+
+        }
+        main{
+            background-color: aliceblue;
+            max-width: 400px; /*Aqui definimos uma altura máxima de 700 pixels pra caso a tela de exibição seja maior o conteúdo do main possa se expandir dessa forma e diminuir segundo a necessidade de uma tela menor */
+            padding: 10px;
+            margin: auto;
+            border: 1px solid blue;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis asperiores ipsam ullam, temporibus magni aliquam ducimus consectetur tenetur necessitatibus facere libero quibusdam, ipsum ratione exercitationem alias fugit, cumque cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur saepe mollitia sit voluptates iste molestiae et repellendus, sequi molestias fugiat minus alias dolorem, natus laboriosam deleniti accusamus, blanditiis error.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatibus magni perspiciatis alias libero fugit eligendi commodi dignissimos eum quas quis quae, mollitia error sit quos sed totam, at obcaecati.
+        
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis asperiores ipsam ullam, temporibus magni aliquam ducimus consectetur tenetur necessitatibus facere libero quibusdam, ipsum ratione exercitationem alias fugit, cumque cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur saepe mollitia sit voluptates iste molestiae et repellendus, sequi molestias fugiat minus alias dolorem, natus laboriosam deleniti accusamus, blanditiis error.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatibus magni perspiciatis alias libero fugit eligendi commodi dignissimos eum quas quis quae, mollitia error sit quos sed totam, at obcaecati.
+        
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis asperiores ipsam ullam, temporibus magni aliquam ducimus consectetur tenetur necessitatibus facere libero quibusdam, ipsum ratione exercitationem alias fugit, cumque cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur saepe mollitia sit voluptates iste molestiae et repellendus, sequi molestias fugiat minus alias dolorem, natus laboriosam deleniti accusamus, blanditiis error.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatibus magni perspiciatis alias libero fugit eligendi commodi dignissimos eum quas quis quae, mollitia error sit quos sed totam, at obcaecati.
+        
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis asperiores ipsam ullam, temporibus magni aliquam ducimus consectetur tenetur necessitatibus facere libero quibusdam, ipsum ratione exercitationem alias fugit, cumque cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur saepe mollitia sit voluptates iste molestiae et repellendus, sequi molestias fugiat minus alias dolorem, natus laboriosam deleniti accusamus, blanditiis error.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatibus magni perspiciatis alias libero fugit eligendi commodi dignissimos eum quas quis quae, mollitia error sit quos sed totam, at obcaecati.
+        
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis asperiores ipsam ullam, temporibus magni aliquam ducimus consectetur tenetur necessitatibus facere libero quibusdam, ipsum ratione exercitationem alias fugit, cumque cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur saepe mollitia sit voluptates iste molestiae et repellendus, sequi molestias fugiat minus alias dolorem, natus laboriosam deleniti accusamus, blanditiis error.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, voluptatibus magni perspiciatis alias libero fugit eligendi commodi dignissimos eum quas quis quae, mollitia error sit quos sed totam, at obcaecati.
+        
+        </p>
+    </main>
+    
+</body>
+</html>
