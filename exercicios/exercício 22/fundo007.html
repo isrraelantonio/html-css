@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #conteiner{
+            background-image: url(imagens/target001.png);
+            background-position: center center;
+            background-size: cover;
+            position: relative;/*por padrão a posição das caixas já são relativas */
+            height: 99vh;
+            padding: 10px;
+            background-color: purple;
+
+        }
+        #conteudo{
+            background-position: center center;
+            background-size: cover;
+           
+            background-image: url(imagens/target001.png);
+            position: absolute; /* Se definirmos a posição com abslute em vez de relativa podemos brincar com sua posição em relação ao coneiner a que está inserida */
+            width: 300px;
+            height: 200px;
+            background-color: chartreuse;
+            margin: auto;
+
+            left: 50%; /* Aqui definimos a distancia do conteúdo em relação ao seu cotêiner como ponto de partida sendo a esquerda */ 
+            top: 50%; /* Aqui definimos a diatância agora definindo o topo da caixa como ponto de partida  OBS: NÓS PODEMOS TRABALHAR COM PIXELS TAMBÉM
+            po padrão quando fazemos isso é sempre posicionado no centro do conteiner o canto superior esquerdo da caixa, porem isso pode ser mudado 
+            com o transform translate (); nesse caso o mesmo translada a posição da caixa até a opção desejada. Nessa opção a posição que podemos mudar se refere a esquerda e a parte de cima. Se tivermos essas opções positivas haverá o distanciamento nesse caso do centr. se os valores estiverem negativos, mais proximos estarão dele. dá para brincar e usar os mais diversos posicionamentos 
+        
+            */ 
+            transform: translate(-50%, -50%);
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <!--O section e o article são divs tabem  prém são divs semânticas pois elas têm propósitos e significado.  Só para lembrar.  Sempre que vamos tarbalhar com alinhamento vertical devemos ter essa característica para se trabalhar-->
+    <section id="conteiner">
+
+        <article id="conteudo">
+
+        </article>
+
+    </section>
+</body>
+</html>
