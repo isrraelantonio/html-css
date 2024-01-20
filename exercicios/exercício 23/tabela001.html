@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{ /* aqui as definições de estilo da tabela, lembrando que a mesma é como uma caixa que envolve todas as  celulas*/
+            width: 400px; /*definimos a largura da tabela */
+            height: 400px; /*definimos a altura da tabela */
+            text-align: center; /* alinhamos todo o texto do conteúdo ou seja das suas ceélulas centralmente, nesse caso estamos fazendo o alinhamento horizontal */
+           
+            border-collapse: collapse; /* esse recurso é o recurso que faz a separação das celulas ou a sua união. para o caso que usamos fazemos sua união. Por padrão as células surgem separadas */
+            
+        }
+        td{
+            border: 2px solid rgb(242, 107, 107); /* agora para cada uma das células*/
+            padding: 8px; /*Apenas um padding de 8px*/
+            vertical-align: top; /* Nesse caso fazemos o alinhamento horizontal. diferente do text-align: center, que usamos na a tabela e influenciou nas células, este só funciona se estiver dentro das definições para célula*/ 
+
+        }
+        tr.linha{ /* Definição para a linha de classe linha */
+            background-color: rgb(30, 174, 126);
+        }
+        td.cor{ /*Definição para células especificamente as de classe cor */
+            background-color: rgb(172, 211, 245);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table> <!--Aqui é onde iniciamos a criação da nossa tabela-->
+        <tr> <!--Aqui temos a 1° linha da tabela-->
+            <td>A1</td>
+            <td class="cor">B1</td><!--Aqui temos os dados da tabela-->
+            <td>C1</td>
+        </tr>
+        <tr class="linha">  <!--Aqui temos a 2° linha da tabela-->
+            <td>A2</td> 
+            <td>B2</td> <!--Aqui temos os dados da tabela-->
+            <td>C2</td>
+        </tr>
+        <tr>  <!--Aqui temos a 3° linha da tabela-->
+            <td>A3</td>
+            <td class="cor">B3</td> <!--Aqui temos os dados da tabela-->
+            <td>C3</td>
+        </tr>
+        <tr  class="linha">  <!--Aqui temos a 4° linha da tabela-->
+            <td>A4</td>
+            <td>B4</td> <!--Aqui temos os dados da tabela-->
+            <td>C4</td>
+        </tr>
+        <tr>  <!--Aqui temos a 5° linha da tabela-->
+            <td>A5</td>
+            <td class="cor">B5</td> <!--Aqui temos os dados da tabela com apenas duas células-->
+        </tr>
+        <tr  class="linha">  <!--Aqui temos a 6° linha da tabela-->
+            <td>A6</td>  <!--Aqui temos os dados da tabela com apenas uma célula-->
+        </tr>
+    </table>
+</body>
+</html>
