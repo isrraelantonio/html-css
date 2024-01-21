@@ -5,30 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        @font-face {
+            font-family: 'fontinha';
+            src: url(fontes/RubikBurned-Regular.ttf) ;
+        }
+        :root{
+            --font1: 'fontinha'
+        }
+
+        body{
+            font-family: var(--font1);
+            padding-left: 40px;
+        }
+        
         table{ /*Definições para a tabela */
-            font-family: Arial, Helvetica, sans-serif; /*definimos qual a fonte queremos usar dentro da nossa tabela */
+            font-family: var(--font1); /*definimos qual a fonte queremos usar dentro da nossa tabela */
             width: 500px; /*Definimos a largura da tabela*/
             border-collapse: collapse; /*retiramos o espaçamento entre as células*/
+            position: relative; /* Definimos a tabela como relativa para a definição de tabela fixa onde iremos fixar o cabeçalho no topo da viewport na rolagem de conteúdo*/
+        }
+        caption{ /*Aqui definimos características do nosso título de cabeçalho
+            como tamanho, peso e definimos uma sombra e a cor da mesma para o mesmo*/
+            
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448);
+        }
+        caption p{ /*Definimos características para o paragrafo como cor de fundo e de texto, padding, e tamanho da fonte em relação a viewport*/
+            background-color:  cadetblue;
+            color: white;
+            padding: 10px 0px 10px 0px;
+            font-size: 3vh;
         }
         tbody{ 
             background-color: rgba(95, 158, 160, 0.048);
+            
+            
         }
-        td, th{ /*Definições em comum para o th e o td  */
-            border: 1px solid cadetblue; /*Criação das bordas primeiro a espeçura depois o tipo de borda em seguida sua cor*/
-            padding: 4px; 
+        tbody tr:nth-child(2n){ /* Aqui definimos o efeito zebrado na nossa tabela. quando dentro dos parênteses definimos o 2n é porque dizemos que a cor de fundo se fará presente de duas em duas linhas dentro do corpo da nossa tabela. Existem outras opções a serem usadas como o odd ----- o mesmo serve para colorir todas as linhas ímpares dentro do corpo, ou o even ---- o mesmo serve para colorir todas as linhas pares dentro do corpo da tabela */
+            background-color:  rgba(95, 158, 160, 0.41);
+            text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448);
+           
         }
         thead, tfoot{ /*Definições em comum, para o thead e também para o tfoot*/
             background-color: cadetblue;
             color: white;
             text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448);
         }
+        thead > tr > th{/* aqui criamos definições que são necessárias para fixar esse cabeçalho no topo da viewport enquanto rola o conteúdo da mesma */
+            position: sticky; /*recurso para colagem desse elemento*/
+            top: 0; /* esse recurso é o que realmente faz essa deinição acontecer*/
+            background-color: cadetblue;
+        }
+        td, th{ /*Definições em comum para o th e o td  */
+            border: 1px solid cadetblue; /*Criação das bordas primeiro a espeçura depois o tipo de borda em seguida sua cor*/
+            padding: 4px; 
+        }
+        td.num{ /*Definições para alinhamento de texto para todos os tds de casse num. Nesse caso alinhamos os dados numéricos ao lado direito da célula*/
+            text-align: right;
+        }
         tfoot{
             text-align: center;
+            
+           
         }
         tfoot td{ /*Definições para o td do  tfoot*/
             color: rgba(12, 11, 11, 0.749); /*Definimos a cor do texto */
-        }
-        td.num{ /*Definições para alinhamento de texto para todos os tds de casse num. Nesse caso alinhamos os dados numéricos ao lado direito da célula*/
             text-align: right;
         }
     </style>
@@ -36,10 +78,11 @@
 <body>
     <h1> Uso de tabelas grandes</h1> <!--Aqui criamos o título do nosso site -->
     <table>  <!--criamos a nossa tabela como a tag table -->
+        <caption><p>População das unidades federativas</p></caption>
         <thead>  <!--criamos a cabeça ou cabeçalho da nossa tabela  -->
             <tr> <!--criamos a linha do abeçalho da nossa tabela  -->
-                <th>Estado</th><!--o th indica que estamos nos referindo a títulos presentes na tabela. são os títulos do cabeçalho-->
-                <th>População</th>
+                <th scope="col">Estado</th><!--o th indica que estamos nos referindo a títulos presentes na tabela. são os títulos do cabeçalho-->
+                <th scope="col" style="width: 150px;">População</th><!--Definimos como escope col pois ele é o titulo de uma de nossas colunas-->
             </tr>
         </thead>
         <tbody> <!--criamos o corpo da nossa tabela  e no mesmo criamos  várias linhas de conteúdo, é uma tabela com um número considerável de informações linhas representadas em tr e dados representados em td-->
@@ -154,13 +197,23 @@
             
         </tbody>
         <tfoot> <!--Aqui agora temos o nosso rodapé o mesmo apresenta o th para título e td para dados -->
-            <th>
+            <th scope="row"> <!--Definimos como escope row pois ele é o titulo de uma linha-->
              Total da População 
             </th>
             <td><strong>203 062 512</strong></td>
            
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, corporis dolores, doloribus, soluta earum alias nostrum architecto quaerat expedita rerum velit unde natus aliquam ex adipisci qui vero tempora voluptate!</p>
 </body>
 </html>
