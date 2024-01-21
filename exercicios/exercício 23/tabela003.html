@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style> 
+    body{ /* definições para o corpo da página. Abaixo definimos o conjunto de fontes para caso alguma não se adeque a algum navegador */
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table { /* Definições para toda a tabela como largura da mesma e tambem a união de bordas */
+        width: 500px;
+        border-collapse: collapse;
+    }
+    td{ /*Definição para as células de dados como borda, tipo de borda, cor de borda, e o padding de 10pixels em relação ao interior de sua caixa*/
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela original que será mesclada</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td> 
+            <td>C</td>
+          
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>  
+            <td>L</td>
+        </tr>
+    </table> <br>
+
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--Aqui fizemos a espanção de colunas onde a coluna b tambem ocupa o espaço onde por exemplo teriámos a coluna  C  se decidissemos por manter a célula C a mesma seria jogada para o lado da tabela-->
+           
+        </tr>
+        <tr>
+            <td rowspan="3">D</td> <!--Nesse caso a célula D ocupa contando com a sua três linhas consecutivas a baixo de sí que no caso como estamos seguindo a ordem alfabética seria o G e a J-->
+            <td>E</td>
+            <td rowspan="2">F</td> <!--Nesse caso a célula F ocupa contando com a sua duas linhas consecutivas a baixo de sí que seriam no caso ele mesmo e a célula  I -->
+        </tr>
+        <tr>
+       <!-- <td>G</td>-->
+            <td>H</td>
+       <!-- <td>I</td>-->
+        </tr>
+        <tr>
+                   <!-- <td>J</td>-->
+            <td colspan="2">K</td> <!--Aqui fizemos a espanção de colunas onde a coluna K tambem ocupa o espaço onde por exemplo teriámos a coluna L se decidissemos por manter a célula L a mesma seria jogada para o lado da tabela-->
+                   <!-- <td>L</td>-->
+        </tr>
+    </table>
+    
+</body>
+</html>
