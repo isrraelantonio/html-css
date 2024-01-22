@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de tabela</title>
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    table{
+        width: 600px;
+        border-collapse: collapse;
+        text-align: ;
+    }
+    col.cnome{
+        background-color: aquamarine;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding-bottom: 15px;
+        }
+    th, td{
+        border: 1px solid black;
+        padding: 8px;
+    }
+    col.cnome  {
+        background-color: yellow;
+        
+    }
+    col.csexo{
+        background-color: green;
+    }
+    col.cidade {
+        background-color: brown;
+    
+    }
+   
+    
+   </style>
+</head>
+<body>
+<h1>Exercício d tabela</h1>
+<table>
+    <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade" span="2">
+        
+    </colgroup>
+    <caption>Cadastro</caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>        
+    </tr>
+    <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>vendedora</td>
+    </tr>
+    <tr>
+        <td>Maria beatriz</td>
+        <td>F</td>
+        <td>34</td>
+        <td>Cozinheira</td>
+    </tr>
+    <tr>
+        <td>Vladimir yohenn</td>
+        <td>M</td>
+        <td>24</td>
+        <td>Médico</td>
+    </tr>
+    <tr>
+        <td>Felipe Gusmam</td>
+        <td>M</td>
+        <td>20</td>
+        <td>Garí</td>
+    </tr>
+    <tr>
+        <td>Paula Matos</td>
+        <td>M</td>
+        <td>25</td>
+        <td>Professora</td>
+    </tr>
+    <tr>
+        <td>Chitãozino</td>
+        <td>M</td>
+        <td>1000</td>
+        <td>Cantor</td>
+    </tr>
+</table>
+</body>
+</html>

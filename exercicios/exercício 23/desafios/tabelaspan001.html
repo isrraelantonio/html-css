@@ -1,14 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+@font-face {
+            font-family: 'fontinha';
+            src: url(../fontes/RubikBurned-Regular.ttf) ;
+        }
+        :root{
+            --font1: 'fontinha'
+        }
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table{
+        width: 400px;
+        border-collapse: collapse;
+        margin: 30px 0px 0px 30px;
+        font-family: var(--font1);
+
+      }
+      td{
+        text-align: center;
+        border: 1px solid cadetblue;
+        padding: 4px 0px 4px 0px;
+
+      }
+      caption{
+        font-size: 2em;
+        text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448);
+        padding-bottom: 15px;
+        background-color:  cadetblue;
+        color: white;
+        padding: 10px 0px 10px 0px;
+        font-size: 3vh;
+      }
+    </style>
 </head>
 <body>
-   <td>
 
-   </td>
    
+   <table>
+    <caption>Tabela desafio de número 1 </caption>
+    
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2">3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        
+    </tr>
+    <tr>
+        <td colspan="3">8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td rowspan="2">10</td>
+        <td colspan="2">11</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+       
+    </tr>
+   </table>
+
+
+   <table>
+    <caption>Tabela desafio de número 2</caption>
+    
+    <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+        
+    </tr>
+    <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        
+    </tr>
+    <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+    </tr>
+    <tr>
+        <td>J</td>
+        <td>L</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td colspan="44">N</td>
+        
+       
+    </tr>
+   </table>
 </body>
-</html>
+</html
