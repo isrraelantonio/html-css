@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre Iframes</title>
+    <style>
+        iframe {
+
+            width: 400px;
+            height: 300px;
+            border: 1px dashed black; /*Nesse caso essa será o tipo de decoração que a borda do iframe terá. Como você pode notar é igual a definição para outras bordas dentro do HTML*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Estudando o uso do iframe</h1>
+    <p>Acessando o site do <!--Os iframes são usados como se fossem quadros postos dentro da nossa linha de conteúdo, eles podem conter endereços de outros sites, onde, dentro da nossa própria página poderá ser carregado, para uma pré vizualisação do seu conteúdo -->
+       <iframe src="https://www.cursoemvideo.com" frameborder="0" height="300" width="" scolling="no"> <!--Você pode definir altura e também largura para os seus iframes tanto em linha d ecódigo dentro do HTML  como também dentro das folhas de estilo dentro do seu CSS nesse caso se você fizer essas definições em ambos os dois casos quem se irá se sobrepor serão as definições para  o CSS -->
+        <!--Quando falamos em bordas para os iframes se estiver zero não teremos nenhuma borda. Se adicionarmos qualquer número definiremos essa espeçura de borda o que na verdade não servirá de nada pois o número 1 vai ser o único que irá se fazer presente-->
+        <!--Usando o scolling e o valor "no" dentro do iframe não deveria haver a bara de rolagem para o iframe prém memso com esse recuroso o navegador, pelomenos no google edgie não funciona, na verdade esse recurso não é nem sugerido na hora da digitação no vs code-->
+
+
+        <a href=" https://www.cursoemvideo.com"> O curso em vídeo</a>
+        
+       </iframe>
+         em vídeo para aprender</p>
+         <p>
+            O repositório do 
+            <iframe src="https://github.com/isrraelantonio/" frameborder="0" height="300"  > <!--Em meus testes a página do github rejeitou o a conexão com iframe e o iframe não substituiu a caixa pelo link talvez isso não funcione mais. o mais indicado mesmo nesse caso já que noa construção você saberá qual site funciona e qual não, adicionar apenas o link memso para não ter esse tipo de contratempo-->
+                <a href="https://github.com/isrraelantonio/">Israel Antonio </a>
+            </iframe>
+            também é bem legal.
+         </p>
+    
+</body>
+</html>
