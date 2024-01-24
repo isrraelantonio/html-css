@@ -6,38 +6,38 @@
     <title>Document</title>
     <style>
 
-@font-face {
-            font-family: 'fontinha';
-            src: url(../fontes/RubikBurned-Regular.ttf) ;
+@font-face { /*Aqui fizemos a importação da fonte guardada em uma pasta fora da pasta do nosso html */
+            font-family: 'fontinha';/*Nomeamos a fonte de fontinha*/
+            src: url(../fontes/RubikBurned-Regular.ttf) ; /*Aqui pomos o endereçõ da fonte, nesse casso usamos o ../ pois precisamos sair um nível da pasta que nos encontramos para encontrar a fonte que desejamos encontar*/
         }
-        :root{
-            --font1: 'fontinha'
+        :root{ /* o root como ja mensionado em outros códigos, permite criar variáveis para serem usadas pelo nosso código*/
+            --font1: 'fontinha' /*definimos a fonte fontinha para a variável font1*/
         }
 
-      body{
+      body{ /* Definimos uma fonte padrão para todo o corpo do html*/
         font-family: Arial, Helvetica, sans-serif;
       }
-      table{
-        width: 400px;
-        border-collapse: collapse;
-        margin: 30px 0px 0px 30px;
-        font-family: var(--font1);
+      table{ /*Definições para a tabela */
+        width: 400px;/*largura da tabela*/
+        border-collapse: collapse; /* juntamos as bordas das células*/
+        margin: 30px 0px 0px 30px; /*Definimos então a margim do topo e do lado esquerdo*/
+        font-family: var(--font1); /*fizemos uso da variável fontinha para a nossa fonte da tabela */
 
       }
-      td{
-        text-align: center;
-        border: 1px solid cadetblue;
-        padding: 4px 0px 4px 0px;
+      td{ /*Definições para as células td*/
+        text-align: center; /*alinhamento do texto*/
+        border: 1px solid cadetblue; /* definimos uma borda a largura o tipo de borda e a cor */
+        padding: 4px 0px 4px 0px; /*Definimos o espaçamento interno para as celulas*/
 
       }
-      caption{
-        font-size: 2em;
-        text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448);
-        padding-bottom: 15px;
+      caption{ /*Definições para o capition da tabela */
+        font-size: 2em; /*Tamanho da fonte*/
+        text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448); /*sombra para o texto */
+        padding-bottom: 15px; 
         background-color:  cadetblue;
         color: white;
         padding: 10px 0px 10px 0px;
-        font-size: 3vh;
+        font-size: 3vh; /*Tamanho em relação a viewport em 3 porcento*/
       }
     </style>
 </head>
@@ -50,7 +50,7 @@
     <tr>
         <td>1</td>
         <td>2</td>
-        <td rowspan="2">3</td>
+        <td rowspan="2">3</td> <!--Esse dado ocupou mais uma célula abaixo da memsma-->
         <td>4</td>
     </tr>
     <tr>
@@ -60,12 +60,12 @@
         
     </tr>
     <tr>
-        <td colspan="3">8</td>
+        <td colspan="3">8</td> <!--Essa célula ocupou mais duas colunas a sua direita-->
         <td>9</td>
     </tr>
     <tr>
-        <td rowspan="2">10</td>
-        <td colspan="2">11</td>
+        <td rowspan="2">10</td><!--Esse dado ocupou mais uma célula abaixo da memsma-->
+        <td colspan="2">11</td> <!--Essa célula ocupou mais uma coluna a sua direita-->
         <td>12</td>
     </tr>
     <tr>
@@ -81,12 +81,12 @@
     <caption>Tabela desafio de número 2</caption>
     
     <tr>
-        <td colspan="4">A</td>
-        <td rowspan="4">B</td>
+        <td colspan="4">A</td> <!--Essa célula ocupou mais três colunas a sua direita-->
+        <td rowspan="4">B</td> <!--Esse dado ocupou mais três células abaixo da memsma-->
         
     </tr>
     <tr>
-        <td rowspan="4">C</td>
+        <td rowspan="4">C</td>  <!--Esse dado ocupou mais três células abaixo da memsma-->
         <td>D</td>
         <td>E</td>
         <td>F</td>
@@ -103,7 +103,7 @@
         <td>M</td>
     </tr>
     <tr>
-        <td colspan="44">N</td>
+        <td colspan="4">N</td> <!--Essa célula ocupou mais três colunas a sua direita-->
         
        
     </tr>

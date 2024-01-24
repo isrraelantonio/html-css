@@ -27,14 +27,14 @@
         border: 1px solid black;
         padding: 8px;
     }
-    col.cnome  {
+    col.cnome  {   /* aqui é onde criamos as definições para cada uma das classes de coluna. Nesse caso aplicamos o bacgroun-color: amarelo. Essa cor so será aplicada a coluna de clsse cnome dentro da tabela*/
         background-color: yellow;
         
     }
-    col.csexo{
+    col.csexo{  /* aqui criamos as definições para classe de coluna. Nesse caso aplicamos o bacgroun-color: verde. Essa cor so será aplicada a coluna de clsse csexo dentro da tabela*/
         background-color: green;
     }
-    col.cidade {
+    col.cidade { /* aqui criamos as definições para classe de coluna. Nesse caso aplicamos o bacgroun-color: marrom. Essa cor so será aplicada a coluna de clsse cidade dentro da tabela. Nesse caso em específico serão duas tbelas com a mesma cor pois para o col dessa classe espandimos para duas colunas*/
         background-color: brown;
     
     }
@@ -43,13 +43,13 @@
    </style>
 </head>
 <body>
-<h1>Exercício d tabela</h1>
+<h1>Exercício de tabelas</h1>
 <table>
-    <colgroup>
+    <colgroup> <!--Aqui usamos a tag colgroup para celecionar as colunas do escopo, onde, em conjunto a sua classe, ajudará a definir características para essas colunas-->
         <col class="cnome">
         <col class="csexo">
         <col class="cidade" span="2">
-        
+        <!--Perceba que com o col indicamso que o primeiro corresponde a o primeiro col do escolpo assim como o segundo é referente ao da sequência, já no terceiro temos uma expansão reerente aos dois últimos cols presntes dentro do escolpo da tabela -->
     </colgroup>
     <caption>Cadastro</caption>
     <tr>

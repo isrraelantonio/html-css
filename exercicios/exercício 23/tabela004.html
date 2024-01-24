@@ -6,15 +6,15 @@
     <title>Tabela Completa</title>
     <style>
 
-        @font-face {
-                    font-family: 'fontinha';
-                    src: url(fontes/RubikBurned-Regular.ttf) ;
+        @font-face { /*Aqui fizemos a importação da fonte guardada em uma pasta fora da pasta do nosso html */
+                    font-family: 'fontinha'; /*Nomeamos a fonte de fontinha*/
+                    src: url(fontes/RubikBurned-Regular.ttf) ; /*Aqui pomos o endereçõ da fonte, */
                 }
-                :root{
-                    --font1: 'fontinha'
+                :root{/* o root como ja mensionado em outros códigos, permite criar variáveis para serem usadas pelo nosso código*/
+            --font1: 'fontinha' /*definimos a fonte fontinha para a variável font1*/
                 }
         
-              body{
+              body{ /* Definimos uma fonte padrão para todo o corpo do html*/
                 font-family: Arial, Helvetica, sans-serif;
               }
             
@@ -22,32 +22,31 @@
               background-color: white;
             }
 
-              table{
-                width: 600px;
-                border-collapse: collapse;
-                margin: 30px 0px 0px 30px;
-                font-family: var(--font1);
-        
+              table{ /*Definições para a tabela */
+        width: 600px;/*largura da tabela*/
+        border-collapse: collapse; /* juntamos as bordas das células*/
+        margin: 30px 0px 0px 30px; /*Definimos então a margim do topo e do lado esquerdo*/
+        font-family: var(--font1); /*fizemos uso da variável fontinha para a nossa fonte da tabela */
               }
-              td, th{
+              td, th{ /*Configuraçãoes para o td e o th*/
                 text-align: center;
                 border: 1px solid cadetblue;
                 padding: 4px 4px 4px 4px;
 
         
               }
-              td.name, th.name{
+              td.name, th.name{ /*Configurações para o o td e th com classes específicas*/
                margin: 0px;
                
               }
-              caption{
-                font-size: 2em;
-                text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448);
-                padding-bottom: 15px;
+              caption{/*Definições para o capition da tabela */
+                font-size: 2em; /*Tamanho da fonte*/
+                text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.448); /*sombra para o texto */
+                padding-bottom: 15px; 
                 background-color:  cadetblue;
                 color: white;
                 padding: 10px 0px 10px 0px;
-                font-size: 3vh;
+                font-size: 3vh; /*Tamanho em relação a viewport em 3 porcento*/
               }
             </style>
 </head>
@@ -58,12 +57,12 @@
           <tr>
             <th scope="col">Grupo</th>
             <th scope="col" class="name">Nomes</th>
-            <th  scope="colgroup"   colspan="3">Filmes</th>
+            <th  scope="colgroup"   colspan="3">Filmes</th> <!-- O colgroup é utilizado dentro do nosso escopo, quando esse mesmo th abriga mais de uma coluna -->
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="rowgroup" rowspan="3">Mulheres </th>
+            <th scope="rowgroup" rowspan="3">Mulheres </th> <!-- O rowspan é utilizado dentro do nosso escopo, quando esse mesmo th abriga mais de uma linha -->
               <td class="name">Ana Maria Santos</td>
               <td> Alien</td>
               <td>Rambo</td>
@@ -82,7 +81,7 @@
             <td>big Hero</td>
           </tr>
           <tr>
-            <th scope="rowgroup" rowspan="3">Homens </th>
+            <th scope="rowgroup" rowspan="3">Homens </th> <!-- O rowspan é utilizado dentro do nosso escopo, quando esse mesmo th abriga mais de uma linha -->
             <td class="name">Bruno Mendonça</td>
             <td> Intocáveis</td>
             <td>Aminésia</td>
