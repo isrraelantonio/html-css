@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+   <style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    iframe{
+        border: 2px solid black;
+        width: 600px;
+        display: block;
+        margin: auto;
+
+    }
+   </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt doloremque laudantium quos repellat quae fugit fuga ad maiores iure optio reprehenderit eum, magni cumque molestias velit voluptates vel nostrum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eligendi maxime possimus, repudiandae hic aspernatur sed aliquid beatae dignissimos inventore adipisci! Sapiente reprehenderit quo incidunt similique fuga laboriosam possimus illo!</p>
+    <iframe src="paginasextras/paginasextras001.html" frameborder="0" sandbox="allow-same-origin  allow-forms allow-scripts" referrerpolicy="no-referrer"> <!-- Para casos de segurança de iframes o sandbox  só permitirá a execução do formulário se fizerem parte de um servidor de mesma origem e também os scripts  que o mesmo fizer uso. porém serão as unicas coisas a serem liberadas em relação aos iframes. e no caso de no-referrer.  a referrerpolicy="", O valor a ser inserido pode ser o valor padrão “no-referrer-when-downgrade”, ou o “no-referrer”, na verdade no primeiro caso não há essa necessidade da escrita, o mesmo não permite a coleta de  informação por parte do site que está inserido dentro do iframe.
+    -->
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt doloremque laudantium quos repellat quae fugit fuga ad maiores iure optio reprehenderit eum, magni cumque molestias velit voluptates vel nostrum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eligendi maxime possimus, repudiandae hic aspernatur sed aliquid beatae dignissimos inventore adipisci! Sapiente reprehenderit quo incidunt similique fuga laboriosam possimus illo!</p>
+    
+</body>
+</html>

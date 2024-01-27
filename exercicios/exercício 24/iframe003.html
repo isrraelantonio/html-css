@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+    <style>
+        body{ /**/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{ /*Definições para o iframe de id tela */
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, iure rem sed quibusdam cumque, corporis maiores, laborum dolore eveniet itaque odio. Ipsum veritatis quo porro quisquam doloribus velit voluptatibus iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolorem, vel ratione maxime consectetur est unde a in voluptates nesciunt inventore voluptatum fugit quaerat totam magni quisquam expedita, ut velit.</p>
+    <ul> <!--Dentro da nossa página criamos vários links, veja que nesse caso no target não usamos o _blank e sim o name atribuído como identificador do iaframe esse e o pulo do gato para que a exibição ocorra dentro do mesmo.-->
+        <li> <a href="iframe001.htm" target="telas"> primeira página</a></li>
+        <li> <a href="iframe002.html" target="telas"> segunda página</a></li>
+        <li> <a href="https://isrraelantonio.github.io/projeto-android/" target="telas"> terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, iure rem sed quibusdam cumque, corporis maiores, laborum dolore eveniet itaque odio. Ipsum veritatis quo porro quisquam doloribus velit voluptatibus iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolorem, vel ratione maxime consectetur est unde a in voluptates nesciunt inventore voluptatum fugit quaerat totam magni quisquam expedita, ut velit.</p>
+    <iframe id="tela" name="telas" src="" frameborder="2" srcdoc="
+    <h1> Escolha umas das opções acima</h1>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odio. Alias magnam similique, excepturi at iste consequatur dicta? Reiciendis doloribus eum aperiam natus adipisci odit nam, incidunt beatae fugiat doloremque.</p> <img src='imagens/M4anos.png'>
+    
+    "> <!--Para o nosso iframe, adicionamos o identificador name para ser ustilizado pelos links no momento da abertura da página. Além desse recurso, outro também muito interesante para utilização dentro do iframe, para um pré carregamento antes do clique em algumas das páginas linkadas, é o srcdoc= "", dentro do mesmo podemos fazer a nossa construção do HTML, obviamente que e algo limitado, porém, é uma opção. Como o mesmo apresenta aspas duplas é interesente que a construção do código faça uso apenas de aspas simples, como no caso da inserção de imagem acima, onde o diretório apresenta aspas simples.-->
+        <p>
+            infelizmente seu navegador não é compatível com isso
+        </p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, iure rem sed quibusdam cumque, corporis maiores, laborum dolore eveniet itaque odio. Ipsum veritatis quo porro quisquam doloribus velit voluptatibus iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis dolorem, vel ratione maxime consectetur est unde a in voluptates nesciunt inventore voluptatum fugit quaerat totam magni quisquam expedita, ut velit.</p>
+</body>
+</html>
