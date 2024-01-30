@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> <!--No formulário podemos fazer uso da opção autocomplete = " of ", para não haver um auto completamento  dentro das caixas para digitação de texto. Vemos também  o uso do action, nesse caso, está se referindo a que ação tomar ao clicar no submit, e a direção que essas informações irão tomar -->
+        <p>
+            <label for="inome">Nome:</label> <!--Nesse caso, para ligação com o seu input o texto nome deve ser envelopado de dentro de um label e dentro do for que  o memso trará, será inserido o id ou o name da caixa. Nesse caso nos testes que fiz, o melhor realmente é inserir o id da caixa em questão -->
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <input type="submit" value="Salvar">
+    </form>
+
+
+</body>
+</html>

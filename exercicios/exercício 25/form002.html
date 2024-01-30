@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com formulários  </title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!-- O auto complete dentro do form só pode ter duas opções o ON ou o OF, para termos o tipo de auto completagem  para cada input, devemos especificar isso no autocomplete do mesmo, lebrando que para isso auto complete deve estar ativo dentro do formulário, e aí dentro de cada input você poderá criar e escolher qual o seu tipo, se é password, username, new-password, em fim, fica a critério do desenvolvedor.-->
+       <p>
+           
+                <label for="iusu" >Usuario</label>
+                <input type="text" name="usu" id="iusu"   required minlength="4"
+                maxlength="18" size="23" placeholder="Nome deo usuário" autocomplete="username">
+                <!--Podemos definir o compo em questão como obrigatório, o atributo utilizado como podemos ver é o required -->
+                <!--Outro atributo e nesse caso para definir um tamnho para o elemento é o minlength e maxlength para os mesmo você irá preencher o número minimo e maximo de caracteres a serem usados-->
+
+                <!-- O placeholder dentro do input faz indicações do tipo de informação que o usuário deve preencher para que o mesmo se oriente dentro do formulário-->
+
+       </p>
+            <p>
+                <label for="isen">Senha</label>
+                <input type="password" name="sen" id="isen" required minlength="4"
+                maxlength="78" placeholder="CRIE UMA SENAH FORTE" autocomplete="current-password"> <!--Esse tipo de password é do tipo usado para senhas já criadas, o new-password será para senhas novas. -->
+            </p>
+            <p>
+              <input type="submit" value="salvar">
+              <input type="reset" value="Apagar">
+            </p>
+    </form>
+</body>
+</html>
