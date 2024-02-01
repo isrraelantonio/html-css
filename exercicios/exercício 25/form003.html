@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-brn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1><!--Dentro desse formulário nós temos outros tipos de input, no segundo caso de input temos um do tipo number, no terceiro caso temos um do tipo month que no caso são os meses e os anos, e no terceiro caso temos um do tipo date. Nesse caso, o mesmo abrange dia, mês e atambém ano. Por último temos o date, nesse caso estamos nos referindo as horas me que determinado c=evento acontece.-->
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Digite o seu nome" autocomplete="name" size="30" riquered>
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="de 0 a 10" step="0.1" required>
+            <!-- O mesmo não aceita qualquer tipo de caracteres que não seja do tipo número podemos definir o valor máximo e mínimo que usuário pode inserir,usando os atributos max e min , Podemos definir de quanto em quanto, podem acontecer esses saltos nos números. Para esse caso, definimos como pulando de 0.1  -->
+        </p>
+        <p>
+            <label for="iletivo">peíodo letivo</label>
+            <input type="month" name="letivo" id="iletivo" value="2024-01">
+            <!--Nesse caso nós temos um input do tipo month, o mesmo diz respeito aos meses e ano. Em value, já podemos definir as informações que irão aparecer na caixa, o foormato para essa caixa é esse mesmo ano seguido do mês separados por hifen-->
+        </p>
+        <p>
+            <label for="idia">Dia da prova:</label> <!--Nesse caso temos um input so tipo date, o mesmo diz respeito ao dia mês e também o ano de preferir manter algum valor ja pré inserido usamos o value e seguimos a seguinte regra ano, mês e também dia separados por hifen -->
+            <input type="date" name="dia" id="idia" value="1998-03-04">
+        </p>
+        <p>
+            <label for="ihora">Hora da prova</label> <!-- Nesse caso, estamos nos referindo as horas. Para definir uma hora já pré carregada seguimos o fomrato horas e minutos separados por dois pontos-->
+            <input type="time" name="hora" id="ihora" required value="09:45">
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> <!--Como já conhecemos esse e o input do tipo submit-->
+            <input type="reset" value="Apagar"><!--esse é o input responsável por resetar as informações postas nos campos-->
+        </p>
+    </form>
+</body>
+</html>
