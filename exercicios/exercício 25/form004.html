@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset><!--com o fieldeset é possível agrupar todos os elementoss de input junto aos seus labels dentro de uma caixa -->
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome" > Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="digite o seu nome" maxlength="30" size="42">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" placeholder="Digite o seu email" required autocomplete="email" size="42">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" placeholder="(83)99999-9999 -- siga esse formato" size="39.5" required autocomplete="tel"  pattern="^(\[0-9]{2}\)[0-9]{4}-[0-9]{4}$">
+                <!--As expresões regulares, permitem que alguns padrões sejam inseridos e que sejam obrigatórios na digitação no campo em questão, para por exemplo, inserir o código de área e definir a quantidade de números separados pelo hifen. o recurso usado nesse caso é  o patter" ^\($" -->
+                <!--o Placeholder ajuda á informar ao usuário sobre como fazer a inserção de informações-->
+            </p>
+            <!--Estudar sobre expresões regulares as chamadas RegEx-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
