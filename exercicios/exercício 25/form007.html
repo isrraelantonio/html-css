@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastre.php" method="get" autocomplete="on">
+
+    <p>
+        <label for="iest">Estado</label>
+       <select name="est" id="iest">
+        <option value="" selected>Escolher</option>
+            <optgroup label="Região Sudeste">
+                
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG" >Minas Gerais</option>
+            </optgroup>
+            <optgroup label="região Nordeste">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PB">Paraíba</option>
+                <option value="CE">Ceará</option>
+            </optgroup>
+
+       </select>
+    </p>
+    <p>
+        <label for="iprof">Porfissão</label>
+        <input type="text" name="prof" id="iprof" list="iiprof">
+        <datalist  id="iiprof">     <!--essa funcionalidade não funciona muito bem para o edgie,  na verdade demora para aparecer e buga com infomações anteriores, funciona otimamente para o o chrome-->
+            <option value="ADM"> Administração</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="CONT">Contabilisador</option>
+            <option value="PRO"> Professor</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="imeng">Mensagem</label> <br>
+        <textarea name="meng" id="imeng" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar ">
+    </p>
+</form>
+</body>
+</html>
