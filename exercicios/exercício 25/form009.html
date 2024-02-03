@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body><!-- Criamos um input do tipo range, o mesmo diz respeito aquele nivel de satisfação. O output represnetará o valor a que o nível se encontrá. Nesse caso partiremos do nivel 1, que será definido como primeiro valor tanto no input como no output. O oninput fará a coleta das mudnças de niveis apartir daí, e fará a substituição dentro do output. A coleta acontece apartir do id do input range.-->
+    
+    
+    <h1>Exemplo de formulário</h1>
+
+
+    <label for="ilevel">Nivel</label
+        
+        >
+    <input type="range" name="level" id="ilevel" oninput="ival.innerHTML = Number(ilevel.value)" max="7" min="1" value="1">
+
+
+    <output name="val"  id="ival">1</output>
+    
+    <p>
+        <input type="submit"  value="salvar">
+        <input type="reset" value="apagar">
+    </p>
+    
+</body>
+</html>

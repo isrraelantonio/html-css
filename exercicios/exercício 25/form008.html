@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <p>  <!--Trago um exemplo de formulário que faz uso do output-->
+        <label for="in1">Número 1</label> <!--Nesse primeiro caso criamos o  nosso iput, o mesmo é um input do tipo number. A ideia aqui é fazer a soma do primeiro input com um valor que será o in1 com o valor do outro input que também é do tipo number, nesse caso in2. A construção acontece com definições de valores maximos e minimos para ambos -->
+
+
+        <!--Após fazer o uso do output o oniput é quem faz essa coleta e tambem repassa os valores ao  output, o mesmo é feito dentro da tag do input -->
+        <input id="in1" name="n1" type="number" required max="50" min="1" oninput="isoma.innerHTML= Number(in1.value) + Number(in2.value)">
+        <!--Para o oninput definimos que o isoma que no caso é o id do output receberá um valor diferente de 0 que é o que a primore ele tem. nesse caso ele somará  o valor de in1 com o valor de in2-->
+       
+    </p>
+    <p>
+        <label for="in2">Número 2</label><!--Segundo input para a inserção do segundo valor numérico-->
+        <input id="in2" name="n2" type="number" required max="50" min="1"
+        oninput="isoma.innerHTML= Number(in1.value) + Number(in2.value)">
+        <!--Como podemos ver o oninput é posto também dntro do segundo input, para quando ocorrer mudanças no mesmo o resultado da soma se adequar a essa mudança-->
+    </p>
+    <p>
+    <label for="isoma">Soma</label><!--o label que descreve o que irá ser apresentado dento do saoma-->
+    <output name="soma" id="isoma">0</output> <!--Fazemos a criação do nosso output assim como os input apresenta name e id, logo em seguida o valor que estará inicialmente ocupando essa posição-->
+    </p>
+    <p>
+        <input type="submit"  value="salvar">
+        <input type="reset" value="apagar">
+    </p>
+    
+</body>
+</html>

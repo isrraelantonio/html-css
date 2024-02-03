@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+
+    <!--Nesse exemplo estamos fazendo uso de um input do tipo nuber. Nesse caso estamos questionado em que ano o usuário nasceu, tendo definido um limite minimo partindo do ano de 1994 e máximo no ano de 2023. o output deverá apresentar o cálculo dessa idade. apartir do ano inserido pelo usuário. O oniput nesse caso irá chamar a função calcuar que estrá presente no nosso javascript-->
+
+    <h1>Exemplo de formulário</h1>
+    <p>
+        <form action="cadastre.php" autocomplete="on">
+
+            <label for="iano">Qual ano você nasceu ?</label>
+
+            <input type="number" name="ano" id="iano" max="2023" min="1994" value="1994"   oninput="calcular()" >
+            
+            </p>
+                <label for="iresul">Sua idade é:</label>
+
+                <output  id="iresul">0</output>
+
+            <p>
+                <input type="submit"  value="salvar">
+                <input type="reset" value="apagar">
+            </p>
+    </form>
+    <script>
+        /* Em nossa função coletamos o ano em que nos encontramos atualmente isso é possivél através do new Date. Logo após isso, definimos que o output com id iresul será igual ao ano atual menos o valor do ano inserido pelo usuário. É bom ter em mente que qualquer erro na escrita do código pode significar erro na execução do mesmo.*/
+        function calcular() {
+            let atual = new Date().getFullYear()
+            iresul.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
