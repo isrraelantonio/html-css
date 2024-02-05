@@ -1,2 +1,11 @@
 @charset "utf-8";
 /*Para aparehos em pé*/
+
+body{
+   
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    background-position: center bottom;
+}
