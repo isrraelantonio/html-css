@@ -14,7 +14,7 @@ html{  /*Quando pomos o width e height apenas no html, damos fim a barra de rola
     height: 98vh;
 }
 body{
-    background: black url(../imagens/back-phone.jpg) no-repeat center center;
+    background: black url(../imagens/back-phone.jpg) no-repeat center center cover ;
 }
 main{
     background-color: rgba(255, 255, 255, 0.701);
