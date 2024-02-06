@@ -1,2 +1,65 @@
 @charset "utf-8";
 /* Todas as demais medias*/
+/*Typical device breakpoints
+Segundo a w3c esses são o tamanhos de telas para os mais variados tamanhos de tela 
+pequenas telas: 600px
+celular: de 600px até 768px
+tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200 px*/ 
+/*Nesse caso não será desenvolvida configurações para dispositivos moveis pois o mesmo será configurado para dentro de um css específico, já que seguiremos o modelo mobile first*/
+
+@media print{  /*Especificamos a que media estamos nos referindo, nesse caso, a impressora*/
+    /*Quando se trata de impressora não adianta por background pois a mesma não faz essa inserção no documento*/
+    img#tel{ display: none;}
+    img#tab{ display: none;}
+    img#im{ display: block;}
+    img#des{ display: none;}
+    img#tv{ display: none;}
+
+    main{
+        border: 1px solid black;
+    }
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+
+}  
+@media screen and (min-width: 768px) and  (max-width: 992px){ /* com os device breakpoints conseguimos ser ainda mais específicos, quando falamos em medias queries e media feature. Agora podemos definir a que tamanho de tela as configurações serão atribuídas, lembrando que ainda para essas mesmas ainda temos configuração ativas já pré definidas para nossa versão mobile e que irá se perpetuar em todas.*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tel{ display: none;}
+    img#tab{ display: block;}
+    img#im{ display: none;}
+    img#des{ display: none;}
+    img#tv{ display: none;}
+    
+}
+@media screen  and  (min-width: 992px)and (max-width: 1200px){
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#tel{ display: none;}
+    img#tab{ display: none;}
+    img#im{ display: none;}
+    img#des{ display: block;}
+    img#tv{ display: none;}
+    
+}
+@media screen  and  (min-width: 1200px){
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tel{ display: none;}
+    img#tab{ display: none;}
+    img#im{ display: none;}
+    img#des{ display: none;}
+    img#tv{ display: block;}
+    
+    
+}

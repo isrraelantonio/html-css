@@ -1,24 +1,26 @@
 @charset "utf-8";
 /* Versão mobile first*/
 
-*{
+/*nesse caso estamos trabalhando apartir da versão mobile com o método mobile first, logo esse código será o mais completo pois muitos dos coódigos comuns entre as variadas telas estão presentes aqui, perceba que inclusive no código HTML não específicamos que tipo de media estamos nos referindo.*/ 
+
+*{  /* Essas são nossas definições globais, para tal definimos a fonte, o tamanho da mesma o padding  de todos os elementos e definimos também que as bordas tamém farão parte do box dos elementos */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
-html{  /*Quando pomos o width e height apenas no html, damos fim a barra de rolagem que acontece quando também fazemos isso para o body*/
-    width: 98vw;
+html{  /*Quando pomos o width e height apenas no html, damos fim a barra de rolagem que acontece quando também fazemos isso para o body porém no body devemos adicionar no caso d eimagem um background-attachment: fixed; */
+    width: 98vw; /*definimos 98% da largura e altura da viewport*/
     height: 98vh;
 }
-body{
+body{ /* definimos a imagem do background e cover para a imagem se adaptar para ocupar toda a tela, o fixed */
     background: black url(../imagens/back-phone.jpg) no-repeat center center ;
     background-size: cover;
     background-attachment: fixed;
 }
-main{
+main{ /*Definições para o main */
     background-color: rgba(255, 255, 255, 0.701);
     width: 90vw;
     margin: auto;
@@ -34,11 +36,11 @@ main h1{
     font-size: 7vw;
 }
    
-img{
+img{ /*As imagens estarão dispostas em blocos e a imagem que aparecerá na tela ocupará o centro da sua caixa no centro graças a margin top auto*/
     display: block;
     margin: auto;
 }
-img#tel{ display: block;}
+img#tel{ display: block;} /* todas as imagens em seu html tem um identificador, quando usamos o display none é porque não queremos que ele apareça, já quando usamos o blok e porque desejamos que o elemento em questão apareça.*/
 img#tab{ display: none;}
 img#im{ display: none;}
 img#des{ display: none;}
