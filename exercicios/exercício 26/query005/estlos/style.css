@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px
+}
+body{
+    background-color: rgb(201, 201, 165);
+   
+}
+header{
+    background-color: rgb(201, 201, 165);
+}
+header h1{
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    
+}
+span#burger{ /*Para que os elementos estjam de forma centralizada independente da mudança de dispositivo é importante que as divs que os agrupan sejam configuradas como display: block; pois quando não fiz isso o icone do menu ao ir para a tela do celular posicionou-se umpouco  a esquerda das opções do menu ja que o mesmo não seguiu esse padrão*/
+    background-color: black;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+span#burger:hover{
+    background-color:white;
+    color: black;
+    cursor: pointer; /*O cursor do mouse vira uma mão*/
+   
+}
+menu{
+    display: block;
+    display: none;
+    
+}
+menu ul{
+    list-style-type: none;
+    text-align: center;
+  
+}
+
+  menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color:  rgb(156, 156, 123);
+   
+    color: white;
+    border: 1px solid white;
+}
+menu li a:hover{
+    background-color:rgb(201, 201, 165);;
+}
+main{
+     width: 90vw;
+     margin: 20px auto 20px auto;
+     background-color: white;
+     text-align: justify;
+     padding: 10px;
+     border-radius: 10px;
+    
+}
+main h1{
+    text-align: center;
+    font-size: 3vh;
+    padding: 10px;
+}
+main p{
+    margin-bottom: 10px;
+   text-indent: 30px;
+}
