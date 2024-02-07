@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    
+} 
+
+@media screen and (min-width: 768px){
+    span#burger{
+        display: none;
+    }
+    span#burger:hover{
+        background-color:white;
+        color: black;
+        cursor: pointer; /*O cursor do mouse vira uma mão*/
+       
+    }
+    menu{
+        display: inline-block;
+    }
+    menu ul{
+      text-align: left;
+      margin-left: 30px;
+    }
+
+    menu li{
+        text-decoration: none;
+        display: inline-block;
+        width: 120px;
+        padding: 7px;
+        
+    
+    }
+     menu li a{
+        padding: 7px;
+        text-align: center;
+
+    }
+    main{
+        width: 60vw;
+    }
+        
+    
+} 
+
+

@@ -6,11 +6,12 @@
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estlos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estlos/mediaquery.css" media="all">
 
     
 </svg>
 </head>
-<body>
+<body onresize= "mudoutamanho()">
     <header>
         <h1>Meu site </h1>
         <span id="burger" class="material-symbols-outlined" onclick="clicmenu()">menu</span>
@@ -42,6 +43,16 @@
         </article>
     </main>
     <script>
+
+        function mudoutamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = "block"
+            }
+            else{
+                itens.style.display = "none"
+
+            }
+        }
         function clicmenu(){
             if(itens.style.display == "block"){
                 itens.style.display = "none"
