@@ -1,43 +1,47 @@
 @charset "utf-8";
 
 
-*{
+*{/*06 Definições para todo o documento, reference a fonte usada e a extinção de margin e padding*/
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px
 }
-body{
+body{ /* 07 cor de fundo para o body*/
     background-color: rgb(201, 201, 165);
    
 }
-header{
+header{/* 08 cor de fundo para o header*/
     background-color: rgb(201, 201, 165);
 }
-header h1{
+header h1{ /* 09 definições para o h1 do header, definimos um padding de sua caixa e seu alinhamento em relação a div em que está inserido  */
     padding: 30px 10px 10px 10px;
     text-align: center;
     
 }
-span#burger{ /*Para que os elementos estjam de forma centralizada independente da mudança de dispositivo é importante que as divs que os agrupan sejam configuradas como display: block; pois quando não fiz isso o icone do menu ao ir para a tela do celular posicionou-se umpouco  a esquerda das opções do menu ja que o mesmo não seguiu esse padrão*/
+span#burger{ /* 19 Para que os elementos estjam de forma centralizada independente da mudança de dispositivo é importante que as divs que os agrupan sejam configuradas como display: block; pois quando não fiz isso o icone do menu ao ir para a tela do celular posicionou-se umpouco  a esquerda das opções do menu ja que o mesmo não seguiu esse padrão*/
+
+/*aqui definimos o estilo do icone do nosso menu, o seu background, o padding, o displai blok para o icone do menu virar um bloco e ser direcionado ao meio o mesmo será tipo um texto e eserá alinhado ao centro, lembrando que essas configurações são para o span que abriga o icone.  ---- continua no mediaquery.css*/
     background-color: black;
     padding: 10px;
     display: block;
     color: white;
     text-align: center;
 }
+span#burger:hover{ /* nesse caso o cursoe irá virar uama mão toda vez que se aproximar do menu*/
+    cursor: pointer; /*O cursor do mouse vira uma mão*/   
+}
 
-menu{
-    display: block;
-    display: none;
+menu{/* 10 Definimos que os elemento ul do menu estará disposto em bloco e não em linhas como é o padrão*/
+    display: block;   
     
 }
-menu ul{
+menu ul{ /* 11 Defininções para o lu do menu.Retiramos o seu estilo que era do tipo circle e pusemos none além de alinharmos o ul no sentro do menu*/
     list-style-type: none;
     text-align: center;
   
 }
 
-  menu li a{
+  menu li a{ /* 12 Essa definição é para o link dentro dos li, Não irá apresentar nenhuma decoração, estará disposto em bloco também com padding em todas a direções de 10 pxels e a cor do backgorund da sua caixa*/
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -46,11 +50,11 @@ menu ul{
     color: white;
     border: 1px solid white;
 }
-menu li a:hover{
-    background-color:rgb(201, 201, 165);;
+menu li a:hover{ /* 13 Sempre que o mouse passar por cima do link o background mudará a cor.*/
+    background-color:rgb(201, 201, 165);
 }
-main{
-     width: 90vw;
+main{ /* 14 Definições para o main do body, o mesmo ocupará 70 % da vieport do mesmo, com margens de 20 pxels em cima e  em baixo e automatico dos lados para serem ambos iguais, o texto em seu interior será justificado e o pading em seu interior será de 10 pxels, além de uam borda de 10 pxels*/
+     width: 70vw;
      margin: 20px auto 20px auto;
      background-color: white;
      text-align: justify;
@@ -58,12 +62,12 @@ main{
      border-radius: 10px;
     
 }
-main h1{
+main h1{ /* 15 Definições para o h1 do main. O texto será alinhado ao centro, com uma fot size de 1.2 em, e um pedding segundo sua caixa de 10 pxels*/
     text-align: center;
     font-size: 1.2em;
     padding: 10px;
 }
-main p{
-    margin-bottom: 10px;
+main p{ /* 16 Os parágrafos terão em baixo de sua caixa uma margem de 10px, e um text-indent, ou seja, um espaçamento de 30px da margem do main    ----- continua no html*/
+   margin-bottom: 10px;
    text-indent: 30px;
 }

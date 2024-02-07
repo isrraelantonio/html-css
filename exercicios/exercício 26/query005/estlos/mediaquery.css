@@ -1,41 +1,32 @@
 @charset "utf-8";
 
-@media screen and (min-width: 600px) and (max-width: 768px){
-    
-} 
-
-@media screen and (min-width: 768px){
-    span#burger{
+@media screen and (min-width: 768px){ /* 20 Definições para midia maiores com resolulção maiores que as dos celulares.*/
+    span#burger{ /*O icone do menu irá sumir */
         display: none;
     }
-    span#burger:hover{
-        background-color:white;
-        color: black;
-        cursor: pointer; /*O cursor do mouse vira uma mão*/
-       
-    }
-    menu{
+    
+    menu{ /* 21 o conteúdo do menu não estará mais disposto em blocos um emcima do outro e sim um  do lado do outro como numa linha*/
         display: inline-block;
     }
-    menu ul{
+    menu ul{ /* 22  O lu do menu estará alinhado a esquerda do boy com 30p pxels de distância da margem.*/
       text-align: left;
       margin-left: 30px;
     }
 
-    menu li{
-        text-decoration: none;
+    menu li{ /* 23  os conteúdos, ou seja, os links do li estarão dispostos em linhas, cada qual com uma largura de 120 pxels e um padding segundo a sua caixa de 7 pxels */
         display: inline-block;
         width: 120px;
         padding: 7px;
         
     
     }
-     menu li a{
+     menu li a{ /* 24  Definições para o link presente no li*/
         padding: 7px;
         text-align: center;
+       
 
     }
-    main{
+    main{ /* 25  O main sempre pcupará 60% da viewport --- Continua no html em script*/
         width: 60vw;
     }
         

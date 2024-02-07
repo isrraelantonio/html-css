@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
-    <link rel="stylesheet" href="estlos/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <link rel="stylesheet" href="estlos/mediaquery.css" media="all">
+    <link rel="stylesheet" href="estlos/style.css"> <!-- 05 Esse será o nosso estilo principal já que apartir dele que outras configurações seguirão para putros dispoditivos-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/> <!--17 através do  link é possivel faser uso dos icones do google o link foi encontrado no site do google developers-->
 
-    
-</svg>
+
+    <link rel="stylesheet" href="estlos/mediaquery.css" media="all"> <!-- 05 Nesse caso temos o estilo para as outras medias de forma particular continua no style.css -->
 </head>
-<body onresize= "mudoutamanho()">
-    <header>
-        <h1>Meu site </h1>
-        <span id="burger" class="material-symbols-outlined" onclick="clicmenu()">menu</span>
+<body onresize= "mudoutamanho()"> <!--tivemos um problema na transição de tela logo esse recurso fará a verificação da mesma. -->
+    <header> <!--01  Primeiramente definimos a estrutura que o nosso site deverá ter segundo as regras para div semanticas-->
 
-        <menu id="itens">
+        <!--02em nosso header temos o titulo do site com peso h1-->
+        <h1>Meu site </h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clicmenu()">menu</span><!--18 Essa é a incorporação do icone do site do google material icons continua no style.css-->
+
+        <menu id="itens"> <!--03 Em seguida temos um menu, que receberá uma lista de itens com a criação do ul e seus li-->
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -25,7 +26,7 @@
             </ul>
         </menu>
     </header>
-    <main>
+    <main> <!--04  Criamos agora um main que abrigará em seu interior um article. no article será onde o conteúdo será inserido-->
         <article>
             <h1>Testando menu Responsivo</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quis reprehenderit porro quam maiores dicta, itaque fugiat doloribus officiis dignissimos, accusantium suscipit modi ea, mollitia neque. Molestias quas error voluptate?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quis reprehenderit porro quam maiores dicta, itaque fugiat doloribus officiis dignissimos, accusantium suscipit modi ea, mollitia neque. Molestias quas error voluptate?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quis reprehenderit porro quam maiores dicta, itaque fugiat doloribus officiis dignissimos, accusantium suscipit modi ea, mollitia neque. Molestias quas error voluptate?</p>
@@ -44,7 +45,7 @@
     </main>
     <script>
 
-        function mudoutamanho(){
+        function mudoutamanho(){ /* 28  se a tela apresentada tiver um tamnaho maior ou igual a 768 o elemento de id itens  em nosso estylo estarão visiveis junto a suas configurações do contrário não, essa função é ativada pelo recurso onresize= "mudoutamanho()" que chama essa função no html ele faz a checagem do tamano do width*/
             if (window.innerWidth >= 768){
                 itens.style.display = "block"
             }
@@ -53,7 +54,7 @@
 
             }
         }
-        function clicmenu(){
+        function clicmenu(){ /* 26 criamos uma função ao clicar no menu, se no elemento com id itens em seu estilo o mesmo estiver com o blok ativado ele irá disativar já se for ao contrário ele irá ativar. */
             if(itens.style.display == "block"){
                 itens.style.display = "none"
 
