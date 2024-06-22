@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+        div.conteiner{ /*Dentro do css configuramos o conteiner pay para trabalhar em flex box usando o display: flex; e ao mesmo atribuímos uma cor para o background*/
+            background-color: antiquewhite;
+            display: flex; /*Indicamos que esse é um conteiner que usa o flex box*/
+            flex-flow: row wrap;
+        }
+        div.item{  /*Aqui definimos as demais divs como sendo filhas dessa, usando o flex:  auto; as mesmas ficarão fluidas dentro do seu conteiner, adaptando-se ao seu pai*/
+            background-color: aqua; /*Definimos uma cor para esses divs filhas*/
+            border: 1px solid black;  /*Definimos uma borda para essas divs filhas*/
+            flex: auto; /*Aqui temos o flex:  auto para que as caixas filhas se adaptem e ocupem todo o conteiner */
+            padding: ; /*definimos um padding para que os elementos tenam em seu interior um certo ditanciamento*/
+            text-align: center;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">  <!-- nesse caso do exemplo, nós criamos as várias divs dentro de uma outra chamada conteirner, essa, será o pai e as demais em seu interior, serão as filhas -->
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
