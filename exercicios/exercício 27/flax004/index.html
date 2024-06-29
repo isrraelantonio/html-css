@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+        div.conteiner{ /*Dentro do css configuramos o conteiner pay para trabalhar em flex box usando o display: flex; e ao mesmo atribuímos uma cor para o background
+
+            */
+            background-color: antiquewhite;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+
+            height: 300px;
+        }
+        div.item{  /*Aqui definimos as demais divs como sendo filhas dessa, usando o flex:  auto; as mesmas ficarão fluidas dentro do seu conteiner, adaptando-se ao seu pai*/
+            background-color: aqua; /*Definimos uma cor para esses divs filhas*/
+            border: 1px solid black;  /*Definimos uma borda para essas divs filhas*/
+            flex: ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">  <!-- nesse caso do exemplo, nós criamos as várias divs dentro de uma outra chamada conteirner, essa, será o pai e as demais em seu interior, serão as filhas -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
