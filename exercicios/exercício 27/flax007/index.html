@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+        div.conteiner{ /*Dentro do css configuramos o conteiner pay para trabalhar em flex box usando o display: flex; e ao mesmo atribuímos uma cor para o background
+
+            */
+            background-color: antiquewhite;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+        div.item{  /*Aqui definimos as demais divs como sendo filhas dessa, usando o flex:  auto; as mesmas ficarão fluidas dentro do seu conteiner, adaptando-se ao seu pai*/
+            background-color: aqua; /*Definimos uma cor para esses divs filhas*/
+            border: 1px solid black;  /*Definimos uma borda para essas divs filhas*/
+            padding: 20px;
+        }
+        div #i1{
+            align-self: auto;
+           
+
+        }
+        div #i2{
+            align-self: auto;
+           
+
+        }
+        div #i3{
+            align-self: flex-end;
+
+        }
+        div #i4{
+           
+
+        }
+        div #i5{
+            align-self: center;
+
+        }
+        div #i6{
+            
+
+        } div #i7{
+            align-self: stretch;
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">  <!-- nesse caso do exemplo, nós criamos as várias divs dentro de uma outra chamada conteirner, essa, será o pai e as demais em seu interior, serão as filhas -->
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
