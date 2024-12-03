@@ -5,52 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexible box</title>
     <style>
-        div.conteiner{
+        div.conteiner{ 
+
+            
             background-color: antiquewhite;
             display: flex;
             flex-flow: row nowrap;
         }
-        div.item{  
+        div.item{ 
             background-color: aqua; 
-            border: 1px solid black; 
-            text-align: center;
+            border: 1px solid black;
             padding: 10px;
-         
             
         }
 
         div#caixa1{
-          /**/flex-grow: 1;
-          flex-shrink: 1;
-          flex-basis: 200px;
-
+            flex: 1 1 200px;
+           
+        }
+        div#caixa2{
+              flex: 1 2 200px;
         }
 
         div#caixa2{
-            flex-grow: 1;
-            flex-shrink: 2;
-            flex-basis: 200px;
-
+              flex: 1 4 200px;
         }
-
-        div#caixa3{
-            flex-grow: 1;
-            flex-shrink: 4;
-            flex-basis: 200px;
-
-        }
-        
 
 
     </style>
 </head>
 <body>
-    <div class="conteiner">  
-
+    <div class="conteiner"> 
         <div class="item" id="caixa1">A</div>
         <div class="item" id="caixa2">B</div>
         <div class="item" id="caixa3">C</div>
-
+      
     </div>
 </body>
 </html>
